@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D213100A-7D65-4FFB-83BB-DF9C79933FB8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IBOutlets &amp; IBActions</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CCF62DEF-70DD-45F3-B481-F66DA6821FD5</key>
+		<string>https://github.com/ryot/IBOutlets-IBActions-NSLogs.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IBOutlets &amp; IBActions.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CCF62DEF-70DD-45F3-B481-F66DA6821FD5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ryot/IBOutlets-IBActions-NSLogs.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CCF62DEF-70DD-45F3-B481-F66DA6821FD5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CCF62DEF-70DD-45F3-B481-F66DA6821FD5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IBOutlets &amp; IBActions</string>
+		</dict>
+	</array>
+</dict>
+</plist>
