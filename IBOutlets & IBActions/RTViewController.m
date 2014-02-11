@@ -9,7 +9,9 @@
 #import "RTViewController.h"
 
 @interface RTViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *logLabel;
+@property (weak, nonatomic) IBOutlet UILabel *switchLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sliderLabel;
 
 @end
 
@@ -43,25 +45,30 @@ NSString *logString;
     logCount++;
     logString = [NSString stringWithFormat:@"Log to console count: %ld", (long)logCount];
     NSLog(logString);
-    [_label setText:logString];
+    [_logLabel setText:logString];
 }
-- (IBAction)toggled:(id)sender {
+- (IBAction)switchToggled:(id)sender {
+    NSString *toggleString;
     if (toggleCount > 1 && toggleCount%2 == 0) {
-        NSLog(@"Again, eh? It's ok, my CPU is pretty OCD too.");
+        toggleString = @"Again, eh? It's ok, my CPU is pretty OCD too.";
     } else if (toggleCount > 0) {
-        NSLog(@"Switched off.");
+        toggleString = @"Switched off.";
     } else {
-        NSLog(@"Switched on.");
+        toggleString = @"Switched on.";
     }
+    NSLog(toggleString);
+    _switchLabel.text = toggleString;
     toggleCount++;
 }
-- (IBAction)sliderMoved:(id)sender {
-    UISlider *elevenSlider = (UISlider*)sender;
-    if (elevenSlider.value > 10) {
-        NSLog(@"It goes up to 11!");
+- (IBAction)sliderMoved:(UISlider *)sender {
+    NSString *sliderString;
+    if (sender.value > 10) {
+        sliderString = @"It goes up to 11!";
     } else {
-        NSLog(@"Not 11. What a waste.");
+        sliderString = @"Not 11. What a waste.";
     }
+    NSLog(sliderString);
+    _sliderLabel.text = sliderString;
 }
 
 - (void)viewDidAppear:(BOOL)animated
