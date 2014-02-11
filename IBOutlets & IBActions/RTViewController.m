@@ -22,6 +22,9 @@ NSString *logString;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ([self.title isEqualToString:@"firstView"]) {
+            [self.view setBackgroundColor:[UIColor yellowColor]];
+    }
     logCount = 0;
     toggleCount = 0;
 }
@@ -31,7 +34,7 @@ NSString *logString;
 - (IBAction)changeBackgroundColor:(id)sender {
     UIColor *newBGColor = [UIColor cyanColor];
     if ([self.view.backgroundColor isEqual:newBGColor]) {
-        [self.view setBackgroundColor:[UIColor whiteColor]];
+        [self.view setBackgroundColor:[UIColor yellowColor]];
     } else {
         [self.view setBackgroundColor:newBGColor];
     }
@@ -52,8 +55,9 @@ NSString *logString;
     }
     toggleCount++;
 }
-- (IBAction)sliderMoved:(UISlider *)sender {
-    if (sender.value > 10) {
+- (IBAction)sliderMoved:(id)sender {
+    UISlider *elevenSlider = (UISlider*)sender;
+    if (elevenSlider.value > 10) {
         NSLog(@"It goes up to 11!");
     } else {
         NSLog(@"Not 11. What a waste.");
