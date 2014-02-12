@@ -25,7 +25,7 @@ NSString *logString;
 {
     [super viewDidLoad];
     if ([self.title isEqualToString:@"firstView"]) {
-            [self.view setBackgroundColor:[UIColor yellowColor]];
+        [self.view setBackgroundColor:[UIColor yellowColor]];
     }
     logCount = 0;
     toggleCount = 0;
